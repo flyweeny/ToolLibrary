@@ -2,7 +2,7 @@
 ---
 
 ### 目录
-* [length数组长度](Array.length)
+* [length数组长度](#Array.length)
 
 ##### Array.length
 Array.from()<br>
