@@ -4,8 +4,40 @@
 ### 目录
 * [length数组长度](#Array.length)
 
-##### Array.length
-Array.from()<br>
+### Array.length
+##### length 是Array的实例属性。返回或设置一个数组中的元素个数。该值是一个无符号 32-bit 整数，并且总是大于数组最高项的下标。
+  基本用法
+```javascript
+var namelistA = new Array(4294967296); // 2的32次方 = 4294967296 
+var namelistC = new Array(-100) // 负号
+
+console.log(namelistA.length); // RangeError: 无效数组长度 
+console.log(namelistC.length); // RangeError: 无效数组长度 
+
+var namelistB = []; 
+namelistB.length = Math.pow(2,32)-1; //set array length less than 2 to the 32nd power 
+console.log(namelistB.length); 
+// 4294967295
+```
+------
+### Array.from()
+#### Array.from() 方法从一个类似数组或可迭代对象中创建一个新的数组实例。
+### 语法
+### Array.from(arrayLike[, mapFn[, thisArg]])
+### arrayLike
+    想要转换成数组的伪数组对象或可迭代对象。
+### mapFn (可选参数)
+    如果指定了该参数，新数组中的每个元素会执行该回调函数。
+### thisArg (可选参数)
+    可选参数，执行回调函数 mapFn 时 this 对象。
+```javascript
+// Array from a String
+Array.from('foo'); 
+// ["f", "o", "o"]
+
+
+```
+------
 Array.isArray()<br>
 Array.observe()<br>
 Array.of()<br>
