@@ -1,9 +1,10 @@
 ### Array 中所有属性方法速查表
-#### 属性
+---
+
+### 目录
+* [length数组长度](Array.length)
+
 ##### Array.length
-Array.prototype<br>
-Array.prototype[@@unscopables]<br>
-<h3>方法</h3>
 Array.from()<br>
 Array.isArray()<br>
 Array.observe()<br>
