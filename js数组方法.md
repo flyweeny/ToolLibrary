@@ -1,5 +1,5 @@
-###Array
-####属性
+### Array
+#### 属性
 Array.length<br>
 Array.prototype<br>
 Array.prototype[@@unscopables]<br>
