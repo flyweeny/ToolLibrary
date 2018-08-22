@@ -34,11 +34,18 @@ console.log(namelistB.length);
 // Array from a String
 Array.from('foo'); 
 // ["f", "o", "o"]
-
-
 ```
-------
-Array.isArray()<br>
+[传送门](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+
+---
+
+### Array.isArray()
+    Array.isArray() 用于确定传递的值是否是一个 Array。
+### 语法
+### Array.isArray(obj)
+[传送门](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+
+---
 Array.observe()<br>
 Array.of()<br>
 Array.prototype.concat()<br>
