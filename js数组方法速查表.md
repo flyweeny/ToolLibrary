@@ -3,7 +3,8 @@
 
 ### 目录
 * [length数组长度](#Array.length)
-
+* [Array.from()](#Array.from())
+* [Array.isArray()](#Array.isArray())
 ### Array.length
 ##### length 是Array的实例属性。返回或设置一个数组中的元素个数。该值是一个无符号 32-bit 整数，并且总是大于数组最高项的下标。
   基本用法
