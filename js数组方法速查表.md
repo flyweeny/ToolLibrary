@@ -2,9 +2,9 @@
 ---
 
 ### 目录
-* [length数组长度](#Array.length)
-* [Array.from()](#Array.from())
-* [Array.isArray()](#Array.isArray())
+* [length数组长度](#length)
+* [Array.from()] (#from)
+* [Array.isArray()] (#isArray)
 ### Array.length
 ##### length 是Array的实例属性。返回或设置一个数组中的元素个数。该值是一个无符号 32-bit 整数，并且总是大于数组最高项的下标。
   基本用法
@@ -21,7 +21,7 @@ console.log(namelistB.length);
 // 4294967295
 ```
 ------
-### Array.from()
+### from()
 #### Array.from() 方法从一个类似数组或可迭代对象中创建一个新的数组实例。
 ### 语法
 ### Array.from(arrayLike[, mapFn[, thisArg]])
@@ -40,7 +40,7 @@ Array.from('foo');
 
 ---
 
-### Array.isArray()
+### isArray()
     Array.isArray() 用于确定传递的值是否是一个 Array。
 ### 语法
 ### Array.isArray(obj)
