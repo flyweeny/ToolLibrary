@@ -17,7 +17,7 @@ console.log(namelistB.length);
 ```
 ------
 ### Array.from()
-#### Array.from() 方法从一个类似数组或可迭代对象中创建一个新的数组实例。
+##### Array.from() 方法从一个类似数组或可迭代对象中创建一个新的数组实例。
 ##### 语法： Array.from(arrayLike[, mapFn[, thisArg]])
 * **arrayLike** 想要转换成数组的伪数组对象或可迭代对象。
 * **mapFn** (可选参数) 如果指定了该参数，新数组中的每个元素会执行该回调函数。
@@ -38,9 +38,11 @@ Array.from('foo');
 [传送门](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
 
 -------
-### Array.observe()
+### ~~~Array.observe()~~~ 已经废弃
 -------
-Array.of()
+### Array.of()
+##### Array.of() 方法创建一个具有可变数量参数的新数组实例，而不考虑参数的数量或类型。
+
 -------
 Array.prototype.concat()
 -------
