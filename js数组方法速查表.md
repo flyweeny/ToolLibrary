@@ -77,6 +77,7 @@ if (!Array.of) {
 }
 ```
 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/of" target="_blank">传送门</a>
+
 -------
 Array.prototype.concat()
 -------
