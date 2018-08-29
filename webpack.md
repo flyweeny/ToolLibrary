@@ -1,5 +1,5 @@
 # webpack配置
-```js
+```javascript
 {
   "name": "demo1",
   "version": "1.0.0",
