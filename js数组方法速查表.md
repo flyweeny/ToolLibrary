@@ -35,14 +35,48 @@ Array.from('foo');
     Array.isArray() 用于确定传递的值是否是一个 Array。
 ### 语法
 ### Array.isArray(obj)
-[传送门](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+```js
+// 下面的函数调用都返回 true
+Array.isArray([]);
+Array.isArray([1]);
+Array.isArray(new Array());
+// 鲜为人知的事实：其实 Array.prototype 也是一个数组。
+Array.isArray(Array.prototype); 
+
+// 下面的函数调用都返回 false
+Array.isArray();
+Array.isArray({});
+Array.isArray(null);
+Array.isArray(undefined);
+Array.isArray(17);
+Array.isArray('Array');
+Array.isArray(true);
+Array.isArray(false);
+Array.isArray({ __proto__: Array.prototype });
+```
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray" target="_blank">传送门</a>
 
 -------
 ### ~~~Array.observe()~~~ 已经废弃
 -------
 ### Array.of()
 ##### Array.of() 方法创建一个具有可变数量参数的新数组实例，而不考虑参数的数量或类型。
+```js
+Array.of(7);       // [7] 
+Array.of(1, 2, 3); // [1, 2, 3]
 
+Array(7);          // [ , , , , , , ]
+Array(1, 2, 3);    // [1, 2, 3]
+```
+##### 如果原生不支持的话，在其他代码之前执行以下代码会创建 Array.of() 。
+```js
+if (!Array.of) {
+  Array.of = function() {
+    return Array.prototype.slice.call(arguments);
+  };
+}
+```
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/of" target="_blank">传送门</a>
 -------
 Array.prototype.concat()
 -------
