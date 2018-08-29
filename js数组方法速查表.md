@@ -31,10 +31,10 @@ Array.from('foo');
 [传送门](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
 
 ------
-### Array.isArray
-    Array.isArray() 用于确定传递的值是否是一个 Array。
-### 语法
-### Array.isArray(obj)
+### Array.isArray   
+##### Array.isArray() 用于确定传递的值是否是一个 Array。
+#### 语法
+##### Array.isArray(obj)
 ```js
 // 下面的函数调用都返回 true
 Array.isArray([]);
