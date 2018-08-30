@@ -117,5 +117,5 @@ app.listen(3000);
 npm install debug -D
 set DEBUG=*,-not_this
 // example
-set DEBUG=*,-not_this
+$env:DEBUG='app';node app.js
 ```
