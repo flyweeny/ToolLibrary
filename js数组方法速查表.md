@@ -116,6 +116,8 @@ num1[0].push(4);
 console.log(nums);
 // results in [[1, 4], 2, [3]]
 ```
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" target="_blank">传送门</a>
+
 -------
 Array.prototype.copyWithin()
 -------
