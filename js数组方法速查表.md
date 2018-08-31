@@ -80,6 +80,42 @@ if (!Array.of) {
 
 -------
 Array.prototype.concat()
+#####  concat() 方法用于合并两个或多个数组。此方法不会更改现有数组，而是返回一个新数组。
+```js
+//以下代码将两个数组合并为一个新数组：
+var alpha = ['a', 'b', 'c'];
+var numeric = [1, 2, 3];
+alpha.concat(numeric);
+// result in ['a', 'b', 'c', 1, 2, 3]
+
+
+//以下代码将三个数组合并为一个新数组：
+var num1 = [1, 2, 3],
+    num2 = [4, 5, 6],
+    num3 = [7, 8, 9];
+var nums = num1.concat(num2, num3);
+console.log(nums); 
+// results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+//以下代码将三个值连接到数组：
+var alpha = ['a', 'b', 'c'];
+var alphaNumeric = alpha.concat(1, [2, 3]);
+console.log(alphaNumeric); 
+// results in ['a', 'b', 'c', 1, 2, 3]
+
+
+//以下代码合并数组并保留引用：
+var num1 = [[1]];
+var num2 = [2, [3]];
+var nums = num1.concat(num2);
+console.log(nums);
+// results in [[1], 2, [3]]
+// modify the first element of num1
+num1[0].push(4);
+console.log(nums);
+// results in [[1, 4], 2, [3]]
+```
 -------
 Array.prototype.copyWithin()
 -------
