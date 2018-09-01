@@ -79,7 +79,7 @@ if (!Array.of) {
 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/of" target="_blank">传送门</a>
 
 -------
-Array.prototype.concat()
+### Array.prototype.concat()
 #####  concat() 方法用于合并两个或多个数组。此方法不会更改现有数组，而是返回一个新数组。
 ```js
 //以下代码将两个数组合并为一个新数组：
