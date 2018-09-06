@@ -332,6 +332,8 @@ for (let e of iterator) {
 
 -------
 Array.prototype.every()
+##### entries() 方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键/值对。
+
 -------
 Array.prototype.fill()
 -------
