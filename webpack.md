@@ -292,4 +292,43 @@ import ContentDataCtrl from './ContentDataCtrl.js';
     let ContentDataCtrl = new ContentDataCtrl(contentData);
     leftMenuCtrl.init();
 })(window);
+
+
+
+
+
+
+class ContentDataCtrl {
+    constructor(contentData) {
+        this.contentData = contentData;
+    }
+
+    getData() {
+        let content = document.createElement('div');
+        content.classList.add('row');
+        for (let item of this.contentData) {
+            let str = `<div class="item-list col-xs-12 mb20">
+                    <div class="item-left-img col-xs-2">
+                        <img src="${item.imgUrl}">
+                    </div>
+                    <div class="item-info-top col-lg-10 col-xs-12">
+                        <ul>
+                            <li><i class="icon-desktop"></i><span>${item.name}</span></li>
+                            <li class="item-status"><span class="bg-green">${item.status}</span></li>
+                            <li><i class="icon-info"></i><span>${item.ip}</span></li>
+                            <li><i class="icon-folder"></i><span>${item.path}</span></li>
+                        </ul>
+                    </div>
+                    <div class="item-info-bottom col-lg-10 col-xs-12">
+                        <i class="add-browser icon-plus"></i>
+                        <ul class="browserList"></ul>
+                    </div>
+                </div>`;
+            content.innerHTML += str;
+        }
+        document.querySelector('.content-list').appendChild(content);
+    }
+}
+
+export default ContentDataCtrl;
 ```
