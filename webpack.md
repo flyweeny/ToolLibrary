@@ -204,27 +204,92 @@ import "../css/common.css";
 import "../css/fonts.css";
 import "../css/media.css";
 import LeftMenuCtrl from './leftMenuCtrl.js';
+import ContentDataCtrl from './ContentDataCtrl.js';
 
 (function (window) {
     const leftMenuData = [
-        {id: '1', value: 'bjstdmmgbg01/Acceptance_test/Acceptance_test'},
-        {id: '2', value: 'bjstdmmgbg02/Acceptance_test'},
-        {id: '3', value: 'bjstdmmgbg03/Acceptance_test'},
-        {id: '4', value: 'bjstdmmgbg04/Acceptance_test'},
-        {id: '5', value: 'bjstdmmgbg05/Acceptance_test'},
-        {id: '6', value: 'bjstdmmgbg06/Acceptance_test/Acceptance_test'},
-        {id: '7', value: 'bjstdmmgbg07/Acceptance_test'},
-        {id: '8', value: 'bjstdmmgbg08/Acceptance_test'},
-        {id: '9', value: 'bjstdmmgbg09/Acceptance_test'},
-        {id: '10', value: 'bjstdmmgbg10/Acceptance_test'},
-        {id: '11', value: 'bjstdmmgbg11/Acceptance_test/Acceptance_test'}
+        {id: 1, value: 'bjstdmmgbg01/Acceptance_test/Acceptance_test'},
+        {id: 2, value: 'bjstdmmgbg02/Acceptance_test'},
+        {id: 3, value: 'bjstdmmgbg03/Acceptance_test'},
+        {id: 4, value: 'bjstdmmgbg04/Acceptance_test'},
+        {id: 5, value: 'bjstdmmgbg05/Acceptance_test'},
+        {id: 6, value: 'bjstdmmgbg06/Acceptance_test/Acceptance_test'},
+        {id: 7, value: 'bjstdmmgbg07/Acceptance_test'},
+        {id: 8, value: 'bjstdmmgbg08/Acceptance_test'},
+        {id: 9, value: 'bjstdmmgbg09/Acceptance_test'},
+        {id: 10, value: 'bjstdmmgbg10/Acceptance_test'},
+        {id: 11, value: 'bjstdmmgbg11/Acceptance_test/Acceptance_test'}
     ];
     const contentData = [
         {
-            name: '', imgUrl: '', status: '', ip: '', path: '', iconList: []
+            id: 1,
+            name: 'bjstdmngbgr01.thoughtworks.com',
+            imgUrl: '../images/windows.png',
+            status: 'orange',
+            ip: '192.168.1.102',
+            path: '/var/lib/cruise-agent',
+            iconList: [
+                {iconId: 1, iconName: 'Firefox'},
+                {iconId: 2, iconName: 'Safari'},
+                {iconId: 3, iconName: 'Ubuntu'},
+                {iconId: 4, iconName: 'Chrome'}
+            ]
+        }, {
+            id: 2,
+            name: 'bjstdmngbgr01.thoughtworks.com',
+            imgUrl: '../images/windows.png',
+            status: 'orange',
+            ip: '192.168.1.102',
+            path: '/var/lib/cruise-agent',
+            iconList: [
+                {iconId: 1, iconName: 'Firefox'},
+                {iconId: 2, iconName: 'Safari'},
+                {iconId: 3, iconName: 'Ubuntu'},
+                {iconId: 4, iconName: 'Chrome'}
+            ]
+        }, {
+            id: 3,
+            name: 'bjstdmngbgr01.thoughtworks.com',
+            imgUrl: '../images/windows.png',
+            status: 'orange',
+            ip: '192.168.1.102',
+            path: '/var/lib/cruise-agent',
+            iconList: [
+                {iconId: 1, iconName: 'Firefox'},
+                {iconId: 2, iconName: 'Safari'},
+                {iconId: 3, iconName: 'Ubuntu'},
+                {iconId: 4, iconName: 'Chrome'}
+            ]
+        }, {
+            id: 4,
+            name: 'bjstdmngbgr01.thoughtworks.com',
+            imgUrl: '../images/windows.png',
+            status: 'orange',
+            ip: '192.168.1.102',
+            path: '/var/lib/cruise-agent',
+            iconList: [
+                {iconId: 1, iconName: 'Firefox'},
+                {iconId: 2, iconName: 'Safari'},
+                {iconId: 3, iconName: 'Ubuntu'},
+                {iconId: 4, iconName: 'Chrome'}
+            ]
+        }, {
+            id: 5,
+            name: 'bjstdmngbgr01.thoughtworks.com',
+            imgUrl: '../images/windows.png',
+            status: 'orange',
+            ip: '192.168.1.102',
+            path: '/var/lib/cruise-agent',
+            iconList: [
+                {iconId: 1, iconName: 'Firefox'},
+                {iconId: 2, iconName: 'Safari'},
+                {iconId: 3, iconName: 'Ubuntu'},
+                {iconId: 4, iconName: 'Chrome'}
+            ]
         }
     ];
     let leftMenuCtrl = new LeftMenuCtrl(true, leftMenuData);
+    let ContentDataCtrl = new ContentDataCtrl(contentData);
     leftMenuCtrl.init();
 })(window);
 ```
