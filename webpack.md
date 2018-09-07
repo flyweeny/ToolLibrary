@@ -107,7 +107,7 @@ const config = {
 
 module.exports = config;
 ```
-```
+```js
 {
   "name": "easy-webpack-4",
   "version": "4.0.0",
