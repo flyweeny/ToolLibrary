@@ -1,6 +1,8 @@
 ```js
 function Fn() {}// Fn为构造函数
+
 var f1 = new Fn();//f1是Fn构造函数创建出来的对象
+
 // 构造函数的prototype属性值就是对象原型。（Fn.prototype就是对象的原型）
 
 // 构造函数的prototype属性值的类型就是对象
