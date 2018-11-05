@@ -2,7 +2,7 @@
 
 #### 1. unable to load script from assets 'index.android bundle' 红萍报错
 ```text
-<font color='red'>unable to load script from assets 'index.android bundle',
+<font color=red>unable to load script from assets 'index.android bundle',
 make sure your bundle is packaged correctly or youu're runing a packager server</font>
 ```
     第一步，先在工作目录创建：android/app/src/main 目录下创建一个  assets空文件夹
