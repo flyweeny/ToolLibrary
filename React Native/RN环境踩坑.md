@@ -14,3 +14,8 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 ```text
 react-native run-android命令即可
 ```
+
+#### 2. The library com.google.android.gms:play-services-basement is being requested by various other libraries at [[15.0.1,15.0.1]], but resolves to 16.0.1. Disable the plugin and check your dependencies tree using ./gradlew :app:dependencies.
+```text
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+```
