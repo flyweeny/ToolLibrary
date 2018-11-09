@@ -1,6 +1,6 @@
 ### 安装RN中遇到的深坑
 
-#### 1. unable to load script from assets 'index.android bundle' 红萍报错
+#### 1. unable to load script from assets 'index.android bundle' 红屏报错
 ```text
 unable to load script from assets 'index.android bundle',
 make sure your bundle is packaged correctly or youu're runing a packager server
